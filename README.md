@@ -4,7 +4,7 @@ A powerful tool for analyzing C/C++ code structures, providing detailed informat
 
 Powered by [CastXML](https://github.com/CastXML/CastXML) and [pygccxml](https://github.com/gccxml/pygccxml).
 
-[img1](doc/example-1.png)
+![img1](doc/example-1.png)
 
 ## 🚀 Features
 
