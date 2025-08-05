@@ -1,0 +1,1415 @@
+{
+    "ComplexDataStructure": {
+        "decl_type": "ComplexDataStructure",
+        "is_class": true,
+        "type": "ComplexDataStructure",
+        "variables": [
+            {
+                "decl_type": "int",
+                "is_fundamental": true,
+                "name": "id",
+                "type": "int"
+            },
+            {
+                "decl_type": "double",
+                "is_fundamental": true,
+                "name": "weight",
+                "type": "double"
+            },
+            {
+                "decl_type": "bool",
+                "is_fundamental": true,
+                "name": "is_active",
+                "type": "bool"
+            },
+            {
+                "decl_type": "char",
+                "is_fundamental": true,
+                "name": "status_code",
+                "type": "char"
+            },
+            {
+                "decl_type": "std::string const",
+                "is_class": true,
+                "name": "name",
+                "type": "std::basic_string<char>"
+            },
+            {
+                "decl_type": "int const",
+                "is_fundamental": true,
+                "name": "max_connections",
+                "type": "int"
+            },
+            {
+                "decl_type": "UserInfo *",
+                "depointer": {
+                    "decl_type": "UserInfo",
+                    "is_class": true,
+                    "type": "UserInfo",
+                    "variables": [
+                        {
+                            "decl_type": "std::string",
+                            "is_class": true,
+                            "name": "username_",
+                            "type": "std::string"
+                        },
+                        {
+                            "cache_k": "int",
+                            "cached": "Done",
+                            "decl_type": "int",
+                            "name": "user_id_"
+                        },
+                        {
+                            "cache_k": "bool",
+                            "cached": "Done",
+                            "decl_type": "bool",
+                            "name": "is_admin_"
+                        }
+                    ]
+                },
+                "depointer_type": "UserInfo",
+                "is_pointer": true,
+                "name": "owner",
+                "type": "UserInfo *"
+            },
+            {
+                "decl_type": "Point3D *",
+                "depointer": {
+                    "decl_type": "Point3D",
+                    "is_class": true,
+                    "type": "Point3D",
+                    "variables": [
+                        {
+                            "cache_k": "double",
+                            "cached": "Done",
+                            "decl_type": "double",
+                            "name": "x"
+                        },
+                        {
+                            "cache_k": "double",
+                            "cached": "Done",
+                            "decl_type": "double",
+                            "name": "y"
+                        },
+                        {
+                            "cache_k": "double",
+                            "cached": "Done",
+                            "decl_type": "double",
+                            "name": "z"
+                        }
+                    ]
+                },
+                "depointer_type": "Point3D",
+                "is_pointer": true,
+                "name": "location",
+                "type": "Point3D *"
+            },
+            {
+                "decl_type": "DatabaseConnection *",
+                "depointer": {
+                    "decl_type": "DatabaseConnection",
+                    "type": "DatabaseConnection"
+                },
+                "depointer_type": "DatabaseConnection",
+                "is_pointer": true,
+                "name": "db_connection",
+                "type": "DatabaseConnection *"
+            },
+            {
+                "decl_type": "std::shared_ptr<NetworkConfig>",
+                "is_class": true,
+                "name": "network_config",
+                "type": "std::shared_ptr<NetworkConfig>"
+            },
+            {
+                "decl_type": "std::unique_ptr<Buffer<int>>",
+                "is_class": true,
+                "name": "int_buffer",
+                "type": "std::unique_ptr<Buffer<int>>"
+            },
+            {
+                "decl_type": "std::weak_ptr<UserInfo>",
+                "is_class": true,
+                "name": "last_modifier",
+                "type": "std::weak_ptr<UserInfo>"
+            },
+            {
+                "decl_type": "int [10]",
+                "is_unknown": true,
+                "name": "fixed_array",
+                "type": "int [10]"
+            },
+            {
+                "decl_type": "double [3]",
+                "is_unknown": true,
+                "name": "coordinates",
+                "type": "double [3]"
+            },
+            {
+                "decl_type": "char [256]",
+                "is_unknown": true,
+                "name": "buffer",
+                "type": "char [256]"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "decl_type": "float",
+                    "is_fundamental": true,
+                    "type": "float"
+                },
+                "container_v_type": "float",
+                "decl_type": "std::array<float, 5>",
+                "is_class": true,
+                "is_container": true,
+                "name": "measurements",
+                "type": "std::array<float, 5>"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_v_type": "std::string",
+                "decl_type": "std::array<std::string, 3>",
+                "is_class": true,
+                "is_container": true,
+                "name": "tags",
+                "type": "std::array<std::string, 3>"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "cache_k": "UserInfo",
+                    "cached": "Done",
+                    "decl_type": "UserInfo",
+                    "type": "UserInfo"
+                },
+                "container_v_type": "UserInfo",
+                "decl_type": "std::vector<UserInfo>",
+                "is_class": true,
+                "is_container": true,
+                "name": "users",
+                "type": "std::vector<UserInfo>"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "cache_k": "Point3D *",
+                    "cached": "Done",
+                    "decl_type": "Point3D *",
+                    "type": "Point3D *"
+                },
+                "container_v_type": "Point3D *",
+                "decl_type": "std::vector<Point3D *>",
+                "is_class": true,
+                "is_container": true,
+                "name": "waypoints",
+                "type": "std::vector<Point3D *>"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_v_type": "std::string",
+                "decl_type": "std::list<std::string>",
+                "is_class": true,
+                "is_container": true,
+                "name": "log_messages",
+                "type": "std::list<std::string>"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "decl_type": "std::shared_ptr<DatabaseConnection>",
+                    "type": "std::shared_ptr<DatabaseConnection>"
+                },
+                "container_v_type": "std::shared_ptr<DatabaseConnection>",
+                "decl_type": "std::vector<std::shared_ptr<DatabaseConnection>>",
+                "is_class": true,
+                "is_container": true,
+                "name": "db_pool",
+                "type": "std::vector<std::shared_ptr<DatabaseConnection>>"
+            },
+            {
+                "container_k": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_k_type": "std::string",
+                "container_v": {
+                    "cache_k": "int",
+                    "cached": "Done",
+                    "decl_type": "int",
+                    "type": "int"
+                },
+                "container_v_type": "int",
+                "decl_type": "std::map<std::string, int>",
+                "is_class": true,
+                "is_container": true,
+                "name": "string_to_int_map",
+                "type": "std::map<std::string, int>"
+            },
+            {
+                "container_k": {
+                    "cache_k": "int",
+                    "cached": "Done",
+                    "decl_type": "int",
+                    "type": "int"
+                },
+                "container_k_type": "int",
+                "container_v": {
+                    "cache_k": "UserInfo *",
+                    "cached": "Done",
+                    "decl_type": "UserInfo *",
+                    "type": "UserInfo *"
+                },
+                "container_v_type": "UserInfo *",
+                "decl_type": "std::map<int, UserInfo *>",
+                "is_class": true,
+                "is_container": true,
+                "name": "user_registry",
+                "type": "std::map<int, UserInfo *>"
+            },
+            {
+                "container_k": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_k_type": "std::string",
+                "container_v": {
+                    "cache_k": "double",
+                    "cached": "Done",
+                    "decl_type": "double",
+                    "type": "double"
+                },
+                "container_v_type": "double",
+                "decl_type": "std::unordered_map<std::string, double>",
+                "is_class": true,
+                "is_container": true,
+                "name": "metrics",
+                "type": "std::unordered_map<std::string, double>"
+            },
+            {
+                "container_k": {
+                    "decl_type": "Priority",
+                    "type": "Priority"
+                },
+                "container_k_type": "Priority",
+                "container_v": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_v_type": "std::string",
+                "decl_type": "std::multimap<Priority, std::string>",
+                "is_class": true,
+                "is_container": true,
+                "name": "priority_tasks",
+                "type": "std::multimap<Priority, std::string>"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "cache_k": "int",
+                    "cached": "Done",
+                    "decl_type": "int",
+                    "type": "int"
+                },
+                "container_v_type": "int",
+                "decl_type": "std::set<int>",
+                "is_class": true,
+                "is_container": true,
+                "name": "unique_ids",
+                "type": "std::set<int>"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_v_type": "std::string",
+                "decl_type": "std::unordered_set<std::string>",
+                "is_class": true,
+                "is_container": true,
+                "name": "keywords",
+                "type": "std::unordered_set<std::string>"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "container_k_type": null,
+                    "container_v": {
+                        "cache_k": "int",
+                        "cached": "Done",
+                        "decl_type": "int",
+                        "type": "int"
+                    },
+                    "container_v_type": "int",
+                    "decl_type": "std::vector<int>",
+                    "is_class": true,
+                    "is_container": true,
+                    "type": "std::vector<int>"
+                },
+                "container_v_type": "std::vector<int>",
+                "decl_type": "std::vector<std::vector<int>>",
+                "is_class": true,
+                "is_container": true,
+                "name": "matrix",
+                "type": "std::vector<std::vector<int>>"
+            },
+            {
+                "container_k": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_k_type": "std::string",
+                "container_v": {
+                    "container_k_type": null,
+                    "container_v": {
+                        "cache_k": "Point3D",
+                        "cached": "Done",
+                        "decl_type": "Point3D",
+                        "type": "Point3D"
+                    },
+                    "container_v_type": "Point3D",
+                    "decl_type": "std::vector<Point3D>",
+                    "is_class": true,
+                    "is_container": true,
+                    "type": "std::vector<Point3D>"
+                },
+                "container_v_type": "std::vector<Point3D>",
+                "decl_type": "std::map<std::string, std::vector<Point3D>>",
+                "is_class": true,
+                "is_container": true,
+                "name": "named_paths",
+                "type": "std::map<std::string, std::vector<Point3D>>"
+            },
+            {
+                "container_k": {
+                    "cache_k": "int",
+                    "cached": "Done",
+                    "decl_type": "int",
+                    "type": "int"
+                },
+                "container_k_type": "int",
+                "container_v": {
+                    "container_k": {
+                        "cache_k": "std::string",
+                        "cached": "Done",
+                        "decl_type": "std::string",
+                        "type": "std::string"
+                    },
+                    "container_k_type": "std::string",
+                    "container_v": {
+                        "cache_k": "double",
+                        "cached": "Done",
+                        "decl_type": "double",
+                        "type": "double"
+                    },
+                    "container_v_type": "double",
+                    "decl_type": "std::map<std::string, double>",
+                    "is_class": true,
+                    "is_container": true,
+                    "type": "std::map<std::string, double>"
+                },
+                "container_v_type": "std::map<std::string, double>",
+                "decl_type": "std::unordered_map<int, std::map<std::string, double>>",
+                "is_class": true,
+                "is_container": true,
+                "name": "nested_metrics",
+                "type": "std::unordered_map<int, std::map<std::string, double>>"
+            },
+            {
+                "cache_k": "Priority",
+                "cached": "Done",
+                "decl_type": "Priority",
+                "name": "current_priority"
+            },
+            {
+                "decl_type": "Status",
+                "is_enum": true,
+                "name": "current_status",
+                "type": "Status"
+            },
+            {
+                "decl_type": "int (*)( int,double )",
+                "depointer": {
+                    "cache_k": "int (*)( int,double )",
+                    "cached": "InProcess",
+                    "decl_type": "int (*)( int,double )",
+                    "type": "int (*)( int,double )"
+                },
+                "depointer_type": "int (*)( int,double )",
+                "is_pointer": true,
+                "name": "callback_function",
+                "type": "int (*)( int,double )"
+            },
+            {
+                "decl_type": "void (*)( char const * )",
+                "depointer": {
+                    "cache_k": "void (*)( char const * )",
+                    "cached": "InProcess",
+                    "decl_type": "void (*)( char const * )",
+                    "type": "void (*)( char const * )"
+                },
+                "depointer_type": "void (*)( char const * )",
+                "is_pointer": true,
+                "name": "error_handler",
+                "type": "void (*)( char const * )"
+            },
+            {
+                "container_k": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_k_type": "std::string",
+                "container_v": {
+                    "container_k_type": null,
+                    "container_v": {
+                        "cache_k": "UserInfo *",
+                        "cached": "Done",
+                        "decl_type": "UserInfo *",
+                        "type": "UserInfo *"
+                    },
+                    "container_v_type": "UserInfo *",
+                    "decl_type": "std::vector<UserInfo *>",
+                    "is_class": true,
+                    "is_container": true,
+                    "type": "std::vector<UserInfo *>"
+                },
+                "container_v_type": "std::vector<UserInfo *>",
+                "decl_type": "ComplexDataStructure::UserGroupMap",
+                "is_class": true,
+                "is_container": true,
+                "is_typedef": true,
+                "name": "user_groups",
+                "type": "ComplexDataStructure::UserGroupMap",
+                "typedef_decl_type": "std::map<std::string, std::vector<UserInfo *>>",
+                "typedef_type": "std::map<std::string, std::vector<UserInfo *>>"
+            },
+            {
+                "decl_type": "NetworkConfig",
+                "is_class": true,
+                "name": "network_settings",
+                "type": "NetworkConfig",
+                "variables": [
+                    {
+                        "cache_k": "std::string",
+                        "cached": "Done",
+                        "decl_type": "std::string",
+                        "name": "host"
+                    },
+                    {
+                        "cache_k": "int",
+                        "cached": "Done",
+                        "decl_type": "int",
+                        "name": "port"
+                    },
+                    {
+                        "cache_k": "bool",
+                        "cached": "Done",
+                        "decl_type": "bool",
+                        "name": "use_ssl"
+                    },
+                    {
+                        "container_k_type": null,
+                        "container_v": {
+                            "cache_k": "std::string",
+                            "cached": "Done",
+                            "decl_type": "std::string",
+                            "type": "std::string"
+                        },
+                        "container_v_type": "std::string",
+                        "decl_type": "std::vector<std::string>",
+                        "is_class": true,
+                        "is_container": true,
+                        "name": "allowed_ips",
+                        "type": "std::vector<std::string>"
+                    },
+                    {
+                        "decl_type": "NetworkConfig::Authentication",
+                        "is_class": true,
+                        "name": "auth",
+                        "type": "NetworkConfig::Authentication",
+                        "variables": [
+                            {
+                                "cache_k": "std::string",
+                                "cached": "Done",
+                                "decl_type": "std::string",
+                                "name": "username"
+                            },
+                            {
+                                "cache_k": "std::string",
+                                "cached": "Done",
+                                "decl_type": "std::string",
+                                "name": "password"
+                            },
+                            {
+                                "cache_k": "std::vector<std::string>",
+                                "cached": "Done",
+                                "decl_type": "std::vector<std::string>",
+                                "name": "certificates"
+                            },
+                            {
+                                "cache_k": "bool",
+                                "cached": "Done",
+                                "decl_type": "bool",
+                                "name": "two_factor_enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "decl_type": "NetworkConfig::Timeouts",
+                        "is_class": true,
+                        "name": "timeouts",
+                        "type": "NetworkConfig::Timeouts",
+                        "variables": [
+                            {
+                                "cache_k": "int",
+                                "cached": "Done",
+                                "decl_type": "int",
+                                "name": "connection_timeout"
+                            },
+                            {
+                                "cache_k": "int",
+                                "cached": "Done",
+                                "decl_type": "int",
+                                "name": "read_timeout"
+                            },
+                            {
+                                "cache_k": "int",
+                                "cached": "Done",
+                                "decl_type": "int",
+                                "name": "write_timeout"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "ComplexDataStructure::UserGroupMap": {
+        "container_k": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_k_type": "std::string",
+        "container_v": {
+            "container_k_type": null,
+            "container_v": {
+                "cache_k": "UserInfo *",
+                "cached": "Done",
+                "decl_type": "UserInfo *",
+                "type": "UserInfo *"
+            },
+            "container_v_type": "UserInfo *",
+            "decl_type": "std::vector<UserInfo *>",
+            "is_class": true,
+            "is_container": true,
+            "type": "std::vector<UserInfo *>"
+        },
+        "container_v_type": "std::vector<UserInfo *>",
+        "decl_type": "ComplexDataStructure::UserGroupMap",
+        "is_class": true,
+        "is_container": true,
+        "is_typedef": true,
+        "name": "user_groups",
+        "type": "ComplexDataStructure::UserGroupMap",
+        "typedef_decl_type": "std::map<std::string, std::vector<UserInfo *>>",
+        "typedef_type": "std::map<std::string, std::vector<UserInfo *>>"
+    },
+    "DatabaseConnection": {
+        "decl_type": "DatabaseConnection",
+        "type": "DatabaseConnection"
+    },
+    "DatabaseConnection *": {
+        "decl_type": "DatabaseConnection *",
+        "depointer": {
+            "decl_type": "DatabaseConnection",
+            "type": "DatabaseConnection"
+        },
+        "depointer_type": "DatabaseConnection",
+        "is_pointer": true,
+        "name": "db_connection",
+        "type": "DatabaseConnection *"
+    },
+    "NetworkConfig": {
+        "decl_type": "NetworkConfig",
+        "is_class": true,
+        "name": "network_settings",
+        "type": "NetworkConfig",
+        "variables": [
+            {
+                "cache_k": "std::string",
+                "cached": "Done",
+                "decl_type": "std::string",
+                "name": "host"
+            },
+            {
+                "cache_k": "int",
+                "cached": "Done",
+                "decl_type": "int",
+                "name": "port"
+            },
+            {
+                "cache_k": "bool",
+                "cached": "Done",
+                "decl_type": "bool",
+                "name": "use_ssl"
+            },
+            {
+                "container_k_type": null,
+                "container_v": {
+                    "cache_k": "std::string",
+                    "cached": "Done",
+                    "decl_type": "std::string",
+                    "type": "std::string"
+                },
+                "container_v_type": "std::string",
+                "decl_type": "std::vector<std::string>",
+                "is_class": true,
+                "is_container": true,
+                "name": "allowed_ips",
+                "type": "std::vector<std::string>"
+            },
+            {
+                "decl_type": "NetworkConfig::Authentication",
+                "is_class": true,
+                "name": "auth",
+                "type": "NetworkConfig::Authentication",
+                "variables": [
+                    {
+                        "cache_k": "std::string",
+                        "cached": "Done",
+                        "decl_type": "std::string",
+                        "name": "username"
+                    },
+                    {
+                        "cache_k": "std::string",
+                        "cached": "Done",
+                        "decl_type": "std::string",
+                        "name": "password"
+                    },
+                    {
+                        "cache_k": "std::vector<std::string>",
+                        "cached": "Done",
+                        "decl_type": "std::vector<std::string>",
+                        "name": "certificates"
+                    },
+                    {
+                        "cache_k": "bool",
+                        "cached": "Done",
+                        "decl_type": "bool",
+                        "name": "two_factor_enabled"
+                    }
+                ]
+            },
+            {
+                "decl_type": "NetworkConfig::Timeouts",
+                "is_class": true,
+                "name": "timeouts",
+                "type": "NetworkConfig::Timeouts",
+                "variables": [
+                    {
+                        "cache_k": "int",
+                        "cached": "Done",
+                        "decl_type": "int",
+                        "name": "connection_timeout"
+                    },
+                    {
+                        "cache_k": "int",
+                        "cached": "Done",
+                        "decl_type": "int",
+                        "name": "read_timeout"
+                    },
+                    {
+                        "cache_k": "int",
+                        "cached": "Done",
+                        "decl_type": "int",
+                        "name": "write_timeout"
+                    }
+                ]
+            }
+        ]
+    },
+    "NetworkConfig::Authentication": {
+        "decl_type": "NetworkConfig::Authentication",
+        "is_class": true,
+        "name": "auth",
+        "type": "NetworkConfig::Authentication",
+        "variables": [
+            {
+                "cache_k": "std::string",
+                "cached": "Done",
+                "decl_type": "std::string",
+                "name": "username"
+            },
+            {
+                "cache_k": "std::string",
+                "cached": "Done",
+                "decl_type": "std::string",
+                "name": "password"
+            },
+            {
+                "cache_k": "std::vector<std::string>",
+                "cached": "Done",
+                "decl_type": "std::vector<std::string>",
+                "name": "certificates"
+            },
+            {
+                "cache_k": "bool",
+                "cached": "Done",
+                "decl_type": "bool",
+                "name": "two_factor_enabled"
+            }
+        ]
+    },
+    "NetworkConfig::Timeouts": {
+        "decl_type": "NetworkConfig::Timeouts",
+        "is_class": true,
+        "name": "timeouts",
+        "type": "NetworkConfig::Timeouts",
+        "variables": [
+            {
+                "cache_k": "int",
+                "cached": "Done",
+                "decl_type": "int",
+                "name": "connection_timeout"
+            },
+            {
+                "cache_k": "int",
+                "cached": "Done",
+                "decl_type": "int",
+                "name": "read_timeout"
+            },
+            {
+                "cache_k": "int",
+                "cached": "Done",
+                "decl_type": "int",
+                "name": "write_timeout"
+            }
+        ]
+    },
+    "Point3D": {
+        "decl_type": "Point3D",
+        "is_class": true,
+        "type": "Point3D",
+        "variables": [
+            {
+                "cache_k": "double",
+                "cached": "Done",
+                "decl_type": "double",
+                "name": "x"
+            },
+            {
+                "cache_k": "double",
+                "cached": "Done",
+                "decl_type": "double",
+                "name": "y"
+            },
+            {
+                "cache_k": "double",
+                "cached": "Done",
+                "decl_type": "double",
+                "name": "z"
+            }
+        ]
+    },
+    "Point3D *": {
+        "decl_type": "Point3D *",
+        "depointer": {
+            "decl_type": "Point3D",
+            "is_class": true,
+            "type": "Point3D",
+            "variables": [
+                {
+                    "cache_k": "double",
+                    "cached": "Done",
+                    "decl_type": "double",
+                    "name": "x"
+                },
+                {
+                    "cache_k": "double",
+                    "cached": "Done",
+                    "decl_type": "double",
+                    "name": "y"
+                },
+                {
+                    "cache_k": "double",
+                    "cached": "Done",
+                    "decl_type": "double",
+                    "name": "z"
+                }
+            ]
+        },
+        "depointer_type": "Point3D",
+        "is_pointer": true,
+        "name": "location",
+        "type": "Point3D *"
+    },
+    "Priority": {
+        "decl_type": "Priority",
+        "type": "Priority"
+    },
+    "Status": {
+        "decl_type": "Status",
+        "is_enum": true,
+        "name": "current_status",
+        "type": "Status"
+    },
+    "UserInfo": {
+        "decl_type": "UserInfo",
+        "is_class": true,
+        "type": "UserInfo",
+        "variables": [
+            {
+                "decl_type": "std::string",
+                "is_class": true,
+                "name": "username_",
+                "type": "std::string"
+            },
+            {
+                "cache_k": "int",
+                "cached": "Done",
+                "decl_type": "int",
+                "name": "user_id_"
+            },
+            {
+                "cache_k": "bool",
+                "cached": "Done",
+                "decl_type": "bool",
+                "name": "is_admin_"
+            }
+        ]
+    },
+    "UserInfo *": {
+        "decl_type": "UserInfo *",
+        "depointer": {
+            "decl_type": "UserInfo",
+            "is_class": true,
+            "type": "UserInfo",
+            "variables": [
+                {
+                    "decl_type": "std::string",
+                    "is_class": true,
+                    "name": "username_",
+                    "type": "std::string"
+                },
+                {
+                    "cache_k": "int",
+                    "cached": "Done",
+                    "decl_type": "int",
+                    "name": "user_id_"
+                },
+                {
+                    "cache_k": "bool",
+                    "cached": "Done",
+                    "decl_type": "bool",
+                    "name": "is_admin_"
+                }
+            ]
+        },
+        "depointer_type": "UserInfo",
+        "is_pointer": true,
+        "name": "owner",
+        "type": "UserInfo *"
+    },
+    "bool": {
+        "decl_type": "bool",
+        "is_fundamental": true,
+        "name": "is_active",
+        "type": "bool"
+    },
+    "char": {
+        "decl_type": "char",
+        "is_fundamental": true,
+        "name": "status_code",
+        "type": "char"
+    },
+    "char [256]": {
+        "decl_type": "char [256]",
+        "is_unknown": true,
+        "name": "buffer",
+        "type": "char [256]"
+    },
+    "double": {
+        "decl_type": "double",
+        "is_fundamental": true,
+        "name": "weight",
+        "type": "double"
+    },
+    "double [3]": {
+        "decl_type": "double [3]",
+        "is_unknown": true,
+        "name": "coordinates",
+        "type": "double [3]"
+    },
+    "float": {
+        "decl_type": "float",
+        "is_fundamental": true,
+        "type": "float"
+    },
+    "int": {
+        "decl_type": "int",
+        "is_fundamental": true,
+        "name": "id",
+        "type": "int"
+    },
+    "int (*)( int,double )": {
+        "decl_type": "int (*)( int,double )",
+        "depointer": {
+            "cache_k": "int (*)( int,double )",
+            "cached": "InProcess",
+            "decl_type": "int (*)( int,double )",
+            "type": "int (*)( int,double )"
+        },
+        "depointer_type": "int (*)( int,double )",
+        "is_pointer": true,
+        "name": "callback_function",
+        "type": "int (*)( int,double )"
+    },
+    "int [10]": {
+        "decl_type": "int [10]",
+        "is_unknown": true,
+        "name": "fixed_array",
+        "type": "int [10]"
+    },
+    "int const": {
+        "decl_type": "int const",
+        "is_fundamental": true,
+        "name": "max_connections",
+        "type": "int"
+    },
+    "std::array<float, 5>": {
+        "container_k_type": null,
+        "container_v": {
+            "decl_type": "float",
+            "is_fundamental": true,
+            "type": "float"
+        },
+        "container_v_type": "float",
+        "decl_type": "std::array<float, 5>",
+        "is_class": true,
+        "is_container": true,
+        "name": "measurements",
+        "type": "std::array<float, 5>"
+    },
+    "std::array<std::string, 3>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_v_type": "std::string",
+        "decl_type": "std::array<std::string, 3>",
+        "is_class": true,
+        "is_container": true,
+        "name": "tags",
+        "type": "std::array<std::string, 3>"
+    },
+    "std::list<std::string>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_v_type": "std::string",
+        "decl_type": "std::list<std::string>",
+        "is_class": true,
+        "is_container": true,
+        "name": "log_messages",
+        "type": "std::list<std::string>"
+    },
+    "std::map<int, UserInfo *>": {
+        "container_k": {
+            "cache_k": "int",
+            "cached": "Done",
+            "decl_type": "int",
+            "type": "int"
+        },
+        "container_k_type": "int",
+        "container_v": {
+            "cache_k": "UserInfo *",
+            "cached": "Done",
+            "decl_type": "UserInfo *",
+            "type": "UserInfo *"
+        },
+        "container_v_type": "UserInfo *",
+        "decl_type": "std::map<int, UserInfo *>",
+        "is_class": true,
+        "is_container": true,
+        "name": "user_registry",
+        "type": "std::map<int, UserInfo *>"
+    },
+    "std::map<std::string, double>": {
+        "container_k": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_k_type": "std::string",
+        "container_v": {
+            "cache_k": "double",
+            "cached": "Done",
+            "decl_type": "double",
+            "type": "double"
+        },
+        "container_v_type": "double",
+        "decl_type": "std::map<std::string, double>",
+        "is_class": true,
+        "is_container": true,
+        "type": "std::map<std::string, double>"
+    },
+    "std::map<std::string, int>": {
+        "container_k": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_k_type": "std::string",
+        "container_v": {
+            "cache_k": "int",
+            "cached": "Done",
+            "decl_type": "int",
+            "type": "int"
+        },
+        "container_v_type": "int",
+        "decl_type": "std::map<std::string, int>",
+        "is_class": true,
+        "is_container": true,
+        "name": "string_to_int_map",
+        "type": "std::map<std::string, int>"
+    },
+    "std::map<std::string, std::vector<Point3D>>": {
+        "container_k": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_k_type": "std::string",
+        "container_v": {
+            "container_k_type": null,
+            "container_v": {
+                "cache_k": "Point3D",
+                "cached": "Done",
+                "decl_type": "Point3D",
+                "type": "Point3D"
+            },
+            "container_v_type": "Point3D",
+            "decl_type": "std::vector<Point3D>",
+            "is_class": true,
+            "is_container": true,
+            "type": "std::vector<Point3D>"
+        },
+        "container_v_type": "std::vector<Point3D>",
+        "decl_type": "std::map<std::string, std::vector<Point3D>>",
+        "is_class": true,
+        "is_container": true,
+        "name": "named_paths",
+        "type": "std::map<std::string, std::vector<Point3D>>"
+    },
+    "std::multimap<Priority, std::string>": {
+        "container_k": {
+            "decl_type": "Priority",
+            "type": "Priority"
+        },
+        "container_k_type": "Priority",
+        "container_v": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_v_type": "std::string",
+        "decl_type": "std::multimap<Priority, std::string>",
+        "is_class": true,
+        "is_container": true,
+        "name": "priority_tasks",
+        "type": "std::multimap<Priority, std::string>"
+    },
+    "std::set<int>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "int",
+            "cached": "Done",
+            "decl_type": "int",
+            "type": "int"
+        },
+        "container_v_type": "int",
+        "decl_type": "std::set<int>",
+        "is_class": true,
+        "is_container": true,
+        "name": "unique_ids",
+        "type": "std::set<int>"
+    },
+    "std::shared_ptr<DatabaseConnection>": {
+        "decl_type": "std::shared_ptr<DatabaseConnection>",
+        "type": "std::shared_ptr<DatabaseConnection>"
+    },
+    "std::shared_ptr<NetworkConfig>": {
+        "decl_type": "std::shared_ptr<NetworkConfig>",
+        "is_class": true,
+        "name": "network_config",
+        "type": "std::shared_ptr<NetworkConfig>"
+    },
+    "std::string": {
+        "decl_type": "std::string",
+        "is_class": true,
+        "name": "username_",
+        "type": "std::string"
+    },
+    "std::string const": {
+        "decl_type": "std::string const",
+        "is_class": true,
+        "name": "name",
+        "type": "std::basic_string<char>"
+    },
+    "std::unique_ptr<Buffer<int>>": {
+        "decl_type": "std::unique_ptr<Buffer<int>>",
+        "is_class": true,
+        "name": "int_buffer",
+        "type": "std::unique_ptr<Buffer<int>>"
+    },
+    "std::unordered_map<int, std::map<std::string, double>>": {
+        "container_k": {
+            "cache_k": "int",
+            "cached": "Done",
+            "decl_type": "int",
+            "type": "int"
+        },
+        "container_k_type": "int",
+        "container_v": {
+            "container_k": {
+                "cache_k": "std::string",
+                "cached": "Done",
+                "decl_type": "std::string",
+                "type": "std::string"
+            },
+            "container_k_type": "std::string",
+            "container_v": {
+                "cache_k": "double",
+                "cached": "Done",
+                "decl_type": "double",
+                "type": "double"
+            },
+            "container_v_type": "double",
+            "decl_type": "std::map<std::string, double>",
+            "is_class": true,
+            "is_container": true,
+            "type": "std::map<std::string, double>"
+        },
+        "container_v_type": "std::map<std::string, double>",
+        "decl_type": "std::unordered_map<int, std::map<std::string, double>>",
+        "is_class": true,
+        "is_container": true,
+        "name": "nested_metrics",
+        "type": "std::unordered_map<int, std::map<std::string, double>>"
+    },
+    "std::unordered_map<std::string, double>": {
+        "container_k": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_k_type": "std::string",
+        "container_v": {
+            "cache_k": "double",
+            "cached": "Done",
+            "decl_type": "double",
+            "type": "double"
+        },
+        "container_v_type": "double",
+        "decl_type": "std::unordered_map<std::string, double>",
+        "is_class": true,
+        "is_container": true,
+        "name": "metrics",
+        "type": "std::unordered_map<std::string, double>"
+    },
+    "std::unordered_set<std::string>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_v_type": "std::string",
+        "decl_type": "std::unordered_set<std::string>",
+        "is_class": true,
+        "is_container": true,
+        "name": "keywords",
+        "type": "std::unordered_set<std::string>"
+    },
+    "std::vector<Point3D *>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "Point3D *",
+            "cached": "Done",
+            "decl_type": "Point3D *",
+            "type": "Point3D *"
+        },
+        "container_v_type": "Point3D *",
+        "decl_type": "std::vector<Point3D *>",
+        "is_class": true,
+        "is_container": true,
+        "name": "waypoints",
+        "type": "std::vector<Point3D *>"
+    },
+    "std::vector<Point3D>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "Point3D",
+            "cached": "Done",
+            "decl_type": "Point3D",
+            "type": "Point3D"
+        },
+        "container_v_type": "Point3D",
+        "decl_type": "std::vector<Point3D>",
+        "is_class": true,
+        "is_container": true,
+        "type": "std::vector<Point3D>"
+    },
+    "std::vector<UserInfo *>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "UserInfo *",
+            "cached": "Done",
+            "decl_type": "UserInfo *",
+            "type": "UserInfo *"
+        },
+        "container_v_type": "UserInfo *",
+        "decl_type": "std::vector<UserInfo *>",
+        "is_class": true,
+        "is_container": true,
+        "type": "std::vector<UserInfo *>"
+    },
+    "std::vector<UserInfo>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "UserInfo",
+            "cached": "Done",
+            "decl_type": "UserInfo",
+            "type": "UserInfo"
+        },
+        "container_v_type": "UserInfo",
+        "decl_type": "std::vector<UserInfo>",
+        "is_class": true,
+        "is_container": true,
+        "name": "users",
+        "type": "std::vector<UserInfo>"
+    },
+    "std::vector<int>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "int",
+            "cached": "Done",
+            "decl_type": "int",
+            "type": "int"
+        },
+        "container_v_type": "int",
+        "decl_type": "std::vector<int>",
+        "is_class": true,
+        "is_container": true,
+        "type": "std::vector<int>"
+    },
+    "std::vector<std::shared_ptr<DatabaseConnection>>": {
+        "container_k_type": null,
+        "container_v": {
+            "decl_type": "std::shared_ptr<DatabaseConnection>",
+            "type": "std::shared_ptr<DatabaseConnection>"
+        },
+        "container_v_type": "std::shared_ptr<DatabaseConnection>",
+        "decl_type": "std::vector<std::shared_ptr<DatabaseConnection>>",
+        "is_class": true,
+        "is_container": true,
+        "name": "db_pool",
+        "type": "std::vector<std::shared_ptr<DatabaseConnection>>"
+    },
+    "std::vector<std::string>": {
+        "container_k_type": null,
+        "container_v": {
+            "cache_k": "std::string",
+            "cached": "Done",
+            "decl_type": "std::string",
+            "type": "std::string"
+        },
+        "container_v_type": "std::string",
+        "decl_type": "std::vector<std::string>",
+        "is_class": true,
+        "is_container": true,
+        "name": "allowed_ips",
+        "type": "std::vector<std::string>"
+    },
+    "std::vector<std::vector<int>>": {
+        "container_k_type": null,
+        "container_v": {
+            "container_k_type": null,
+            "container_v": {
+                "cache_k": "int",
+                "cached": "Done",
+                "decl_type": "int",
+                "type": "int"
+            },
+            "container_v_type": "int",
+            "decl_type": "std::vector<int>",
+            "is_class": true,
+            "is_container": true,
+            "type": "std::vector<int>"
+        },
+        "container_v_type": "std::vector<int>",
+        "decl_type": "std::vector<std::vector<int>>",
+        "is_class": true,
+        "is_container": true,
+        "name": "matrix",
+        "type": "std::vector<std::vector<int>>"
+    },
+    "std::weak_ptr<UserInfo>": {
+        "decl_type": "std::weak_ptr<UserInfo>",
+        "is_class": true,
+        "name": "last_modifier",
+        "type": "std::weak_ptr<UserInfo>"
+    },
+    "void (*)( char const * )": {
+        "decl_type": "void (*)( char const * )",
+        "depointer": {
+            "cache_k": "void (*)( char const * )",
+            "cached": "InProcess",
+            "decl_type": "void (*)( char const * )",
+            "type": "void (*)( char const * )"
+        },
+        "depointer_type": "void (*)( char const * )",
+        "is_pointer": true,
+        "name": "error_handler",
+        "type": "void (*)( char const * )"
+    }
+}
