@@ -82,12 +82,12 @@ cd cpp_structure_analyzer
 ### Quick Start Example
 ```bash
 cd cpp_structure_analyzer
-python3 src/repo_analyzer.py --input="example/test1.h" --class "ComplexDataStructure"
+python3 src/structure_analyzer.py --input="example/test1.h" --class "ComplexDataStructure"
 ```
 
 ### Command Line Interface
 ```bash
-python src/repo_analyzer.py \
+python src/structure_analyzer.py \
     --input /path/to/header.h \
     --class ClassName \
     --output result.json \
@@ -104,7 +104,7 @@ python src/repo_analyzer.py \
 - `--output`: Output JSON file path (default: "TODO.json", auto-generated as "{class}_analyze.json")
 - `--cflags`: Compiler flags for clang++ (default: "-std=c++11 -I. -I/usr/local/include -O0 -Wall")
 - `--sort_keys`: Sort JSON keys when dumping to file (flag, default: False)
-- `--log_file`: Path to the log file (default: "./repo_analyzer.log")
+- `--log_file`: Path to the log file (default: "./structure_analyzer.log")
 - `--only_public_var`: Only analyze public variables of a class/struct (flag, default: False)
 - `--file_path_black_list`: Blacklisted file paths to ignore (space-separated list, default: [])
 
