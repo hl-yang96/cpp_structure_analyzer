@@ -720,7 +720,7 @@ if __name__ == "__main__":
     args_parser.add_argument('--cflags', dest='cflags', required=False, default='-std=c++11 -I. -I/usr/local/include -O0 -Wall')
     args_parser.add_argument('--sort_keys', dest='sort_keys', action='store_true', default=False,
                         help='sort the json keys when dump to file')
-    args_parser.add_argument('--log_file', dest='log_file', required=False, default="./repo_analyzer.log",
+    args_parser.add_argument('--log_file', dest='log_file', required=False, default="./debug.log",
                         help='the path of the log file')
     args_parser.add_argument('--only_public_var', dest='only_public_var', action='store_true', default=False,
                         help='only analyze the public variables of a class/struct')
